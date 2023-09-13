@@ -1,0 +1,19 @@
+{
+  "name": "esameprogrammazioneweb",
+  "version": "1.0.0",
+  "description": "scopo del progetto realizzare un applicazione web Social Network for music.",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2"
+  }
+}
