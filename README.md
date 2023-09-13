@@ -51,3 +51,21 @@ scenari principali:
 * Ricerca delle canzoni (ad es., tipologia, autore, cantante, genere);
 
 * Visualizzazione delle playlist private e delle pubbliche di altri utenti
+# API
+
+## Routes
+
+* ```
+  /song/:idSong
+  ```
+  
+  restituisce i dettagli della canzone il cui id è idSong
+
+* ```
+  /search
+  ```
+  
+  permette la ricerca tramite  testo usando il parametro q='testo da cercare'
+
+
+
