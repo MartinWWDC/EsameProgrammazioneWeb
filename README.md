@@ -2,11 +2,7 @@
 
 scopo del progetto realizzare un applicazione web Social Network for music.
 
-
-
 Sito di gestione per playlist musicali.
-
-
 
 gestisce il processo di organizzazione di playlist
 musicali di più utenti e la loro condivisione. E composto da tre macro
@@ -31,13 +27,11 @@ scenari principali:
 
 3. Il terzo scenario (gestione delle condivisioni) consiste nella classica condivisione di oggetti all’interno di un’applicazione web. Gli utenti possono decidere quale delle playlist da loro composte rendere pubbliche ad altri utenti. In un’area dedicata del portale gli utenti possono ricercare le playlist pubbliche, visualizzare le informazioni principali (elenco delle canzoni, durata, tag e descrizione) e decidere se importarle nel proprio profilo. La ricerca delle playlist pubbliche deve fornire come criteri di ricerca almeno i tag associati e le canzoni in esse contenute.
 
-
-
 # Funzionalità
 
 - Registrazione e login al sito
 
--  Gestione dei dati utente (modifica delle informazioni o rimozione del
+- Gestione dei dati utente (modifica delle informazioni o rimozione del
   profilo);
 
 - Aggiunta/Modifica/Cancellazione delle playlist private;
@@ -51,6 +45,7 @@ scenari principali:
 * Ricerca delle canzoni (ad es., tipologia, autore, cantante, genere);
 
 * Visualizzazione delle playlist private e delle pubbliche di altri utenti
+
 # API
 
 ## Routes
@@ -67,5 +62,30 @@ scenari principali:
   
   permette la ricerca tramite  testo usando il parametro q='testo da cercare'
 
+# Strutture Dati
+
+* Utente: 
+  
+  ```js
+  const nuovoUtente = {
+    nome: 'John',
+    cognome: 'Doe',
+    email: 'john.doe@example.com',
+    password: 'passwordsegreta',
+    dataN: '04/04/2004'
+  };
+  ```
+
+* Playlist:
+  
+  ```js
+  const nuovaPlaylist = {
+        titolo: 'Playlist',
+        isPublic: 'True',
+        tag: ['fun','rock'],
+        canzoni: ['id1','id2'],
+        autore: 'userID'
+  };
+  ```
 
 
