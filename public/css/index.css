@@ -1,0 +1,56 @@
+body {
+  background-color: #36a916; /* Sostituisci con il colore desiderato */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  padding-bottom: 100px;
+  background-color: #E8BA9B;
+  background-image: url('https://andreivictor.ro/codepen/scroll-bg-animation-pinterest/bg_pasta_grid-3f880df3.jpg');
+  background-size: cover;
+}
+
+.login-container {
+  position: relative;
+  width: 300px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0; /* Inizialmente invisibile */
+  transform: translateY(-50px); /* Posizione spostata in alto */
+  animation: appear 0.5s ease-in-out forwards; /* Animazione di apparizione */
+}
+
+.login-form {
+  padding: 20px;
+}
+
+@keyframes appear {
+  to {
+    opacity: 1; /* Al raggiungimento della posizione prestabilita, rendi visibile */
+    transform: translateY(0); /* Posizione finale */
+  }
+}
+
+.info-block {
+  background-color: #007BFF; /* Colore di sfondo azzurro, personalizzabile */
+  color: #FFFFFF; /* Colore del testo, personalizzabile */
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px; /* Bordi stondati */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Ombra */
+}
+
+.info-block img {
+  max-width: 100px; /* Larghezza massima del logo, personalizzabile */
+}
+
+
+
+
+
